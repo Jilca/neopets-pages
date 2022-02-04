@@ -1,0 +1,861 @@
+<style>
+
+td a img, .sf, .smallfont, table {
+   display: none;
+}
+body {
+   background: #999999 !important;
+   font: 10pt Verdana;
+}
+#template_nav {
+   background: url("http://images.neopets.com/themes/003_hws_9bde9/header_bg.png") no-repeat;
+   border: 0px;
+   margin: 0px;
+   margin-top: 93px;
+   padding-top: 36px;
+   padding-left: 155px;
+   width: 995px;
+   height: 75px;
+   z-index: 1;
+}
+#template_nav li.nav_image {
+   display: inline;
+   float: left;
+}
+#template_nav li.nav_image:hover ul.dropdown, #hero_nav li.nav_image:hover ul.dropdown {
+   display: block;
+}
+#template_nav li ul li {
+   margin: 2px 0px;
+   padding: 0px;
+}
+ul.dropdown {
+   border: 1px #000 solid;
+   z-index: 2;
+   top: 70px;
+   display: none;
+   clear: left;
+   background: #989898 !important;
+   padding: 3px 5px 3px 3px;
+   list-style: none;
+   margin: 0px 0px 0px 10px;
+   text-align: left;
+}
+ul.dropdown a {
+   font: bold 8pt Verdana;
+   display: block;
+   text-decoration: none;
+   color: #000;
+}
+ul.dropdown a:hover {
+   color: #506596 !important;
+}
+#hero_nav {
+   font: 10pt verdana !important;
+   border: 1px solid #000;
+   padding-left: 3px;
+   width: 125px !important;
+   height: 18px !important;
+   z-index: 2;
+   margin-left: 250px;
+   margin-top: 500px;
+   list-style: none;
+}
+#hero_nav ul.dropdown {
+   font: 10pt verdana !important;
+   border: 1px #000 solid;
+   z-index: 2;
+   top: 17px;
+   left: -11px;
+   display: none;
+   clear: left;
+   background: #FFF;
+   width: 120;
+   margin: 0px 0px 0px 10px;
+   padding: 3px 5px 3px 3px;
+   list-style: none;
+   text-align: left;
+}
+#hero_nav a {
+  font: 10pt verdana !important;
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+}
+#hero_nav:hover {
+  border: 1px solid #799bd2;
+}
+.page {
+  width: 995px;
+  height: 2000px;
+  background-color: #FFF;
+  top: 0px;
+  left: 15%;
+  border: #747474 solid 2px;
+  overflow: hidden;
+}
+.sidebar {
+  width: 176px;
+  height: 2000px;
+  background-color: #efefef;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  border: 0px;
+  font: verdana;
+}
+.content {
+  background-color: #FFF;
+  width: 795px;
+  height: 1850px;
+  top: 0px;
+  left: 180px;
+  padding: 10px;
+  padding-top: 0px;
+  overflow: hidden;
+}
+.anchor {
+  width: 795px;
+  height: 1850px;
+  overflow: hidden;
+}
+.anchor a {
+}
+.footer {
+  width: 995px;
+  bottom: 0px;
+  left: 0px;
+  border: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+h1 {
+  font: 13pt verdana;
+  font-weight: bold;
+  margin-top: 180px;
+  margin-bottom: 12px;
+}
+h2 {
+  font: 10pt verdana;
+  font-weight: bold;
+  margin-top: 173px;
+  margin-bottom: 12px;
+}
+h3 {
+  margin-top: 178px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: -2px;
+  padding: 8px;
+}
+h4 {
+  margin-top: 10px;
+  margin: 8px;
+  margin-bottom: -2px;
+  padding: 5px;
+}
+h3, h4 {
+  font: 8pt verdana;
+  font-weight: bold;
+  padding-left: 3px;
+  border: 2px #c9c9c9 solid;
+  text-align: left;
+  color: #a0dbdb;
+  background: #4b9292;
+}
+h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 6px;
+  padding-left: 4px;
+  border: 0px;
+  text-align: left;
+}
+h5 {
+  font: 10pt verdana;
+  font-weight: bold;
+  color: #FFF;
+  background: #4b9292;
+}
+h6 {
+  font: 9pt verdana;
+  font-weight: bold;
+  background: #5d709b;
+  color: #dde9f0;
+}
+a, a:visited {
+  font: 9pt verdana;
+  font-weight: bold;
+  color: #4b9292;
+  text-decoration: none;
+  border: 0px;
+}
+a:hover {
+  color: #506596;
+}
+.side {
+  font: 7pt verdana;
+  background: #FFF;
+  border: 2px #c9c9c9 solid;
+  margin: 8px;
+  margin-top: -2px;
+  padding: 5px;
+}
+.side a {
+  font: 7pt verdana;
+  font-weight: bold;
+  background-color: #FFF;
+  border: 0px;
+}
+.welcome {
+  font: 8pt verdana;
+  font-weight: bold;
+  color: #FFF;
+  z-index: 2;
+  right: 6px;
+  top: 106px;
+}
+.welcome b, .welcome a {
+  font: 8pt verdana;
+  font-weight: bold;
+  color: #4b9292 !important;
+}
+.marquee {
+  background: url("http://i.imgur.com/FdUOp3N.gif") no-repeat;
+  border: 2px #c9c9c9 solid;
+  margin-top: 180px;
+  height: 240px;
+  width: 598px;
+  font: 7pt verdana;
+  float: left;
+}
+.marquee2 {
+  border: 2px #c9c9c9 solid;
+  background: none;
+  margin-top: -2px;
+  margin-left: -2px;
+  height: 240px;
+  width: 598px;
+  float: left;
+}
+.marquee2:hover {
+  background: url("http://i.imgur.com/6YxjnOM.png") no-repeat;
+}
+.minidiv, .minidiv2 {
+  background-color: none;
+  font: 8pt verdana;
+  font-weight: bold;
+  text-align: left;
+  color: #dde9f0;
+  width: 140px;
+  height: 41px;
+  padding: 3px;
+  margin: 2px;
+  margin-right: 5px;
+  margin-left: 446px;
+  float: right;
+}
+.minidiv2 {
+  margin-top: 5px;
+}
+.minidiv:hover, .minidiv2:hover {
+  background-color: #4b5a7e;
+}
+.new {
+  font: 8pt verdana;
+  float: right;
+  width: auto;
+  border: 2px #c9c9c9 solid;
+}
+.map {
+  width: 790px;
+  height: auto;
+  border: 3px #c9c9c9 solid;
+  overflow: hidden;
+}
+.lands {
+  font: 9pt verdana;
+  width: 369;
+  height: 100px;
+  padding: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+  overflow: hidden;
+}
+.lands img {
+  margin: 4px;
+}
+.world {
+  background: url("http://i.imgur.com/3qnRDXW.png") no-repeat;
+  width: 500px;
+  height: 475px;
+  text-align: left;
+  z-index: 0;
+}
+.underworld {
+  width: 30px;
+  height: 30px;
+  margin-left: 260px;
+  margin-top: 215px;
+  z-index: 2;
+  text-align: left;
+}
+.castleinthesky {
+  width: 100px;
+  height: 50px;
+  z-index: 2;
+}
+textarea {
+  color: #a5a5a5;
+  width: 120px !important;
+  height: 17px;
+  overflow: hidden;
+  font: 7pt verdana;
+}
+textarea:hover {
+  color: #000;
+}
+.minidiv img.news, .minidiv2 img.news {
+  top: -2000px;
+}
+.minidiv:hover img.news, .minidiv2:hover img.news {
+  top: 214px;
+  left: 16.5px;
+  height: 200px !important;
+  width: 440px;
+  z-index: 2 !important;
+}
+</style><div class="page" style="position: absolute;">
+
+
+<a href="#/index.phtml"><img src="http://i.imgur.com/vYuO7yC.png" style="position: absolute; z-index: 2; left: 0px; top: 100px;"></a>
+
+
+<img src="http://images.neopets.com/themes/003_hws_9bde9/banner_bg.png" style="position: absolute; z-index: 1; width: 100%;"><div class="welcome" style="position: absolute;">Welcome, <b>visitor</b> | NP: <a href="/inventory.phtml">1,000</a> | NC: <a href="/mall/index.phtml">100</a> | <a href="/login.phtml">Logout</a></div>
+
+
+<img src="http://i.imgur.com/nnxBhYy.gif" style="z-index: 2; position: absolute; right: 7px; top: 140px;"><ul id="template_nav" style="position: relative;"><li class="nav_image">
+<a href="/myaccount.phtml"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/myaccount.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/myaccount.phtml">» Control Panel</a></li>
+
+  
+<li><a href="/preferences.phtml">» Preferences</a></li>
+
+  
+<li><a href="/userinfo.phtml">» Edit Profile</a></li>
+
+  
+<li><a href="/neomessages.phtml">» Neomail</a></li>
+
+  
+<li><a href="/neofriends.phtml">» Neofriends</a></li>
+
+  
+<li><a href="/addpet.phtml">» Create a Neopet</a></li>
+
+     
+<li><a href="/space/warehouse/prizecodes.phtml">» Redeem Code</a></li>
+
+   
+</ul></li>
+<li class="nav_image">
+<a href="/customise/"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/customise.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/customise/">» Customise Neopet</a></li>
+
+  
+<li><a href="/objects.phtml?type=inventory">» Inventory</a></li>
+
+  
+<li><a href="/closet.phtml">» Closet</a></li>
+
+  
+<li><a href="/neohome/"> » Neohomes</a></li>
+
+  
+<li><a href="/addpet.phtml">» Create a Neopet</a></li>
+
+  
+<li><a href="/pound/">» Pound</a></li>
+
+ 
+</ul></li>
+
+
+ 
+<li class="nav_image">
+<a href="/games/"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/games.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/games/">» Games Room</a></li>
+
+  
+<li><a href="/games/category.phtml?sortby=pop">» Popular</a></li>
+
+  
+<li><a href="/games/hiscores.phtml">» High Scores</a></li>
+
+  
+<li><a href="/games/favourites.phtml">» Favourites</a></li>
+
+  
+<li><a href="/dome/">» Battledome</a></li>
+
+    
+</ul></li>
+
+<li class="nav_image">
+<a href="#/explore.phtml"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/explore.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="#/explore.phtml">» Map of Neopia</a></li>
+
+  
+<li><a href="/help/tutorial/index.phtml">» Tutorial</a></li>
+
+     
+<li><a href="/neopedia.phtml">» Neopedia</a></li>
+
+  
+<li><a href="/petcentral.phtml">» Pet Central</a></li>
+
+  
+<li><a href="/calendar.phtml">» Calendar</a></li>
+
+ 
+</ul></li>
+
+
+<li class="nav_image">
+<a href="/nf.phtml"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/news.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/nf.phtml">» New Features</a></li>
+
+ 
+<li><a href="/comingsoon.phtml">» Coming Soon</a></li>
+
+ 
+<li><a href="/ntimes/index.phtml">» Neopian Times</a></li>
+<li><a href="/stuff.phtml">» Merch News</a></li>  </ul></li>
+
+
+<li class="nav_image">
+<a href="/community/index.phtml"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/community.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/community/index.phtml">» Hub</a></li>
+
+  
+<li><a href="/neoboards/index.phtml">» Neoboards</a></li>
+
+  
+<li><a href="/contests.phtml">» Spotlights</a></li>
+
+  
+<li><a href="/guilds/index.phtml">» Guilds</a></li>
+
+ 
+</ul></li>
+
+
+<li class="nav_image">
+<a href="/objects.phtml"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/shops.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/objects.phtml">» Neopia Central</a></li>
+
+  
+<li><a href="/market.phtml?type=wizard">» Shop Wizard</a></li>
+
+  
+<li><a href="/market.phtml?type=your">» Your Shop</a></li>
+
+  
+<li><a href="/auctions.phtml">» Auctions</a></li>
+
+  
+<li><a href="/island/tradingpost.phtml">» Trading Post</a></li>
+
+  
+<li><a href="/bank.phtml">» Bank</a></li>
+
+     
+<li><a href="/shopping/index.phtml">» Merchandise</a></li>
+
+   
+</ul></li>
+
+
+<li class="nav_image">
+<a href="/mall/shop.phtml?page=&amp;cat="><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/ncmall.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/mall/shop.phtml?page=&amp;cat=">» Shop</a></li>
+
+  
+<li><a href="/get-nickcash">» Get Neocash</a></li>
+
+  
+</ul></li><li class="nav_image">
+<a href="/membership/"><img src="http://images.neopets.com/themes/003_hws_9bde9/navigation/premium.png"></a>
+
+ 
+<ul class="dropdown" style="position: absolute;"><li><a href="/membership/">» Become a Member</a></li>
+
+  
+</ul></li></ul><div class="content" style="position: absolute;">
+
+
+  
+<div class="anchor"><a name="/index.phtml">.</a><div class="marquee"><div class="marquee2" style="z-index: 1;"><h6 style="color: #b0b3b9; background: #20283e;">News Flash</h6><div class="minidiv2"><img style="position: absolute;" class="news" src="http://i.imgur.com/VyYZdCc.png">Welcome</div>
+
+ 
+<br><br><a href="#/wagon/index.phtml"><div class="minidiv"><img style="position: absolute;" class="news" src="http://i.imgur.com/B5v2B3L.png">START HERE</div></a>
+
+ 
+<br><div class="minidiv"><img style="position: absolute;" class="news" src="http://i.imgur.com/HYNc5ED.png">Faerie Festival</div>
+
+ 
+<br><div class="minidiv"><img style="position: absolute;" class="news" src="http://i.imgur.com/YejPs7Z.png">Faerie Abilities</div></div></div>
+
+ 
+ 
+<div class="new" style="margin-top: 180px; padding-bottom: 3px;"><h6>Current Offer</h6><center><a href="/petlookup.phtml?pet=xx_Lief_xx"><img src="http://pets.neopets.com/cpn/xx_Lief_xx/1/2.png" style="border: 1px #c9c9c9 solid; padding: 2px; margin: 12px; margin-bottom: 0px;"><br>xx_Lief_xx</a><br>Mail Offers:<br><a href="/neomessages.phtml?type=send&amp;recipient=i_rox_my_sox315">Here</a></center></div>
+
+ 
+ 
+<div class="new" style="border: 2px #c9c9c9 solid; margin-top: 10px; float: left; margin-left: 20px;"><img src="http://images.neopets.com/homepage/promo/2013/mall/2013_magicelixir_dark.jpg"></div>
+
+ 
+ 
+
+<div class="new" style="margin-top: 10px; margin-right: 0px; width: 500px; height: auto; padding: 10px; position: relative;"><h6 style="margin: -10px; margin-bottom: 10px;">MORE INFORMATION</h6>DON'T GET CONFUSED. No, you didn't get hacked and you aren't on someone else's account. ;) This IS A PETPAGE, simply designed to look identical to the Neopets site. Nearly all of the links work, so be wary if you aren't quite ready to leave my page. Some of these links have been modified to lead elsewhere on the petpage. For the benefit of your overall experience on this page, please <b>do not</b> go exploring. You don't want to run into a spoiler! Now go have fun!</div>
+
+
+
+ 
+
+<div class="new" style="margin-top: 10px; margin-right: 0px; width: 500px; height: auto; padding: 10px; position: relative;"><h6 style="margin: -10px; margin-bottom: 10px;">So Close and Yet So Far...</h6><img src="http://i.imgur.com/rseppWz.png" style="width: 500px;"><br><br>Tempered ended up not going through with the rest of her process of narrowing down her finalists, instead choosing one person who specifically stood out from the other 24 finalists. I don't know exactly where I placed, but what an honor to be a finalist!</div>
+
+ 
+ 
+
+<div class="new" style="margin-top: 10px; float: left; margin-left: 20px; width: 210px; height: auto; padding: 10px; position: relative;"><h6 style="margin: -10px; margin-bottom: 10px;">Updates</h6><b>03/2018</b> - I no longer have the time to devote to a personal project as elaborate and time consuming as this petpage. At this point, only three events could possibly motivate me to sacrifice my RL priorities to complete my fan-made plot:<br><br><b>1.</b> Another UC RG draik goes UFA (with either a very long deadline and/or an owner open to unfinished applications)<br><b>2.</b> I manage to eventually trade up to a UC RG draik, in which case I'd try to do my best to work on her page as often as I can find time<br><b>3.</b> TNT un-retires the Site Spotlight + avatar. All adult responsibilities will be thrown out the window for that 50x50px image. LOL<br><br><div style="border: 2px solid #E4E4E4; border-width: 2 0 0 0px;"><b>Note:</b> In the small chance I ever do get to make progress of any kind to the plot, I will post an update here, but it's going to be super vague, lol. No spoilers here!</div></div></div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+
+<div class="anchor"><a name="/wagon/index.phtml">.</a><a href="#/wagon/fortune.phtml"><img src="http://i.imgur.com/WZkmRZv.png" style="width: 125px; position: absolute; right: 30px; margin-top: 575px;"><img src="http://i.imgur.com/EfWu5S7.png" style="position: absolute; right: 20px; margin-top: 570px;"></a><h1>Travelling Wagon</h1>
+
+To the side of this trail rests an old wagon. It does not appear to be open for business, but you hear someone from the inside beckon you closer.
+<br><img src="http://i.imgur.com/HFdwMKl.png"></div>
+
+
+<div class="anchor"><a name="/wagon/fortune.phtml">.</a><a href="#/wagon/fortune1.phtml"><img src="http://i.imgur.com/WZkmRZv.png" style="width: 125px; position: absolute; right: 30px; margin-top: 575px;"><img src="http://i.imgur.com/EfWu5S7.png" style="position: absolute; right: 20px; margin-top: 570px;"></a><h1>Fortune Teller</h1>
+<img src="http://i.imgur.com/3OLhEhs.png"></div>
+
+
+<div class="anchor"><a name="/wagon/fortune1.phtml">.</a><a href="#/wagon/fortune2.phtml"><img src="http://i.imgur.com/WZkmRZv.png" style="width: 125px; position: absolute; right: 30px; margin-top: 575px;"><img src="http://i.imgur.com/EfWu5S7.png" style="position: absolute; right: 20px; margin-top: 570px;"></a><h1>Fortune Teller</h1>
+<img src="http://i.imgur.com/e97oGdP.png"><br></div>
+
+
+<div class="anchor"><a name="/wagon/fortune2.phtml">.</a><a href="#/wagon/index1.phtml"><img src="http://i.imgur.com/WZkmRZv.png" style="width: 125px; position: absolute; right: 30px; margin-top: 575px;"><img src="http://i.imgur.com/EfWu5S7.png" style="position: absolute; right: 20px; margin-top: 570px;"></a><h1>Fortune Teller</h1>
+<img src="http://i.imgur.com/JPcXm3M.png"></div>
+
+
+<div class="anchor"><a name="/wagon/index1.phtml">.</a><a href="#/wagon/index2.phtml"><img src="http://i.imgur.com/WZkmRZv.png" style="width: 125px; position: absolute; right: 30px; margin-top: 575px;"><img src="http://i.imgur.com/EfWu5S7.png" style="position: absolute; right: 20px; margin-top: 570px;"></a><h1>Travelling Wagon</h1>
+
+To the side of this trail rests an old wagon. It does not appear to be open for business. You should probably come back another time.
+<img src="http://i.imgur.com/HFdwMKl.png"></div>
+
+
+<div class="anchor"><a name="/wagon/index2.phtml">.</a><a href="#/wagon/index3.phtml"><img src="http://i.imgur.com/WZkmRZv.png" style="width: 125px; position: absolute; right: 30px; margin-top: 290px;"><img src="http://i.imgur.com/EfWu5S7.png" style="position: absolute; right: 20px; margin-top: 285px;"></a><h1><img src="http://imgur.com/43CNjv8.png"><br>Travelling Wagon</h1>
+
+To the side of this trail rests an old wagon. It does not appear to be open for business. You should probably come back another time.
+<img src="http://i.imgur.com/HFdwMKl.png"></div>
+
+
+<div class="anchor"><a name="/wagon/index3.phtml">.</a><h1><img src="http://i.imgur.com/1HLY2T3.png"><br>Travelling Wagon</h1>
+
+To the side of this trail rests an old wagon. It does not appear to be open for business. You should probably come back another time.
+<img src="http://i.imgur.com/HFdwMKl.png"></div>
+
+
+
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+
+<div class="anchor"><a name="/faerieland/palace.phtml">.</a><a href="#/faerieland/palace1.phtml"><img src="http://i.imgur.com/WZkmRZv.png" style="width: 125px; position: absolute; right: 30px; margin-top: 540px;"><img src="http://i.imgur.com/EfWu5S7.png" style="position: absolute; right: 20px; margin-top: 535px;"></a><h1>The Faerie Palace</h1>
+<img src="http://i.imgur.com/l3Vogih.png"><br><center style="margin-top: -40px;">Hey, you made it! Still have those cards? Awesome. Let me just take a look at the- oh my light, I recognize these cards! These cards aren't predicting the future, they are telling the past. A past-telling card is fairly common, but <br>a whole deck appearing like this to tell the same story? Very unusual! When a true story of the past appears to <br>warn of the future, that is powerful magic...and almost never a good sign. I'm recognizing every single one of <br>these cards, so far...The Artificer...The Prodigy...Magnifying Glass...wait, <i>this</i> story? Why would it tell...oh no...</center></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="anchor"><a name="/faerieland/palace1.phtml">.</a><h1>The Faerie Palace</h1>
+<img src="http://i.imgur.com/l3Vogih.png"><br><center style="margin-top: -40px;">I'm sorry. I know I told you that I would interpret these cards for you, but...these cards. Something is wrong. <br>Or...it will be. I need to find Queen Fyora, immediately. I feel terrible bringing you over here for nothing. There <br>may be a book in the library that can help you decipher these cards yourself. The library faerie should know where <br>
+it is. I have to leave. Good luck!
+
+<br><br><a href="#/faerie/index.phtml">Back to Faerieland</a></center></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="anchor"><a name="/faerie/library.phtml">.</a><h1>The Faerie Library</h1>
+<img src="http://i.imgur.com/CMw3IFb.jpg"><br><center style="margin-top: -40px;">
+Is someone there? Oh! Hello! Can I help you?
+
+<br><br><a href="#/faerie/library1.phtml">Tell her about the cards.</a><br></center></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="anchor"><a name="/explore.phtml">.</a><h2>Map of Neopia</h2>
+These are the lands that have been discovered so far. Why not take your Neopets travelling? Click where you wish to go on the map to explore a whole new part of Neopia! For a little more information about each land, you can also refer to the About the Lands section below.
+
+<br><br><center><div class="world"><img src="http://i.imgur.com/DNmJ10h.gif" style="margin-top: 0px; float: right; z-index: 1;"><div class="underworld" style="position: absolute;"><a href="#/faerieland/index.phtml"><img src="http://i.imgur.com/AMh2WLi.png"></a></div></div></center><br><br><div class="map">
+<h5>About the Lands</h5>
+<div class="lands" style="background-color: #efefef; float: left; margin-top: 3px;">
+
+         
+<a href="/altador/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/ala_helmet.gif" style="width: 80; float: right; border: 1px solid black;"></a>
+
+         
+<a href="/altador/index.phtml"><b>Altador</b></a><br>
+
+                          Once a mystery, this land reappeared in Neopia after a thousand-year absence. It has a rich and heroic history... and a really exciting sports tournament!
+                 
+</div>
+
+                 
+<div class="lands" style="float: right; margin-top: 3px;"><a href="/halloween/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/mpo_castlebright.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/medieval/brightvale.phtml"><b><b>Brightvale</b></b></a><br>
+
+                          This kingdom borders Meridell and is known for its brilliant scholars, stained glass, and delicious fruit. Brightvale Castle, home of King Hagan, is truly a beacon of wisdom, set among lush, green meadows.
+                 
+</div><br><div class="lands" style="float: left;"><a href="#/faerieland/palace.phtml">
+
+                         
+<img src="http://images.neopets.com/items/gar_birdhouse_fyora.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="#/faerieland/index.phtml"><b>Faerieland</b></a><br>
+
+                          A giant castle in the sky, full of games, puzzles, and faeries galore. Poogle Races take place every 15 minutes! Also check out the secret hidden tower... if you can find it!
+                 
+</div>
+
+                 
+<div class="lands" style="background-color: #efefef; float: right;"><a href="/halloween/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/boo_halloween_2004.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/halloween/index.phtml"><b><b>Haunted Woods</b></b></a><br>
+
+                          The spooky Halloween land! Who knows what evil lurks within these environs? Read scary stories, embark on chilling quests, and
+<i>beware the beast that lurks behind the tree...</i>
+
+                 
+</div><br><div class="lands" style="background-color: #efefef; float: left;"><a href="/worlds/index_kikolake.phtml">
+
+                         
+<img src="http://images.neopets.com/items/nsp_kikolake_happenings.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/worlds/index_kikolake.phtml"><b>Kiko Lake</b></a><br>
+
+                          You wouldn't know it at first glance, but an entire community of Kikos resides below Kiko Lake's surface, which was formed within the caldera of a long-dormant volcano. If you can't hold your breath for very long, a glass bottom boat tour may be in order.
+                 
+</div>
+
+                 
+<div class="lands" style="float: right;"><a href="/pirates/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/toy_pirate_ship.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/pirates/index.phtml"><b>Krawk Island</b></a><br>
+
+                          This small island off the southern coast of Mystery Island is inhabited by pirates. Visit Krawk Island for exciting games, buried treasure, a great restaurant, and a swashbuckling academy!
+                 
+</div><br><div class="lands" style="float: left;"><a href="/moon/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/toy_kreldef_plushie.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/moon/index.phtml"><b>Kreludor</b></a><br>
+
+                          Neopia's moon! This giant chunk of space rock is where Dr. Sloth originally found the Grundos, and some of them live there still. Kreludor is famous for its rare Kreludan metal, a mineral essential for construction of evil robots.
+                 
+</div>
+
+                 
+<div class="lands" style="background-color: #efefef; float: right;"><a href="/water/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/babyca_maraquan.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/water/index.phtml"><b>Maraqua</b></a><br>
+
+                          After the whirlpool destroyed the original city, King Kelpbeard set about rebuilding something even more splendid, with a strong army to protect it from attackers. But, the pirates found out...                      
+</div><br><div class="lands" style="background-color: #efefef; float: left;"><a href="/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/toy_squeaky_mortog.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/medieval/index.phtml"><b>Meridell</b></a><br>
+
+                          A medieval land from the past, Meridell was discovered by a group of unlikely adventurers. Visit Meridell for great games (mostly involving vegetables), faerie quests, bullseye, Mortog kissing, puzzles and much more!
+                 
+</div>
+
+                 
+<div class="lands" style="float: right;"><a href="/magma/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/mcf_fireeggs.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/magma/index.phtml"><b>Moltara</b></a><br>
+
+                          Deep in the core of Neopia lies Moltara, a land of glowing lava flows and strange steam-powered contraptions. Unbeknownst to most of Neopia until Y11, Moltarans have lived alongside the searing magma for many years.
+                 
+</div><br><div class="lands" style="float: left;"><a href="/island/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/tro_combfruit.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/island/index.phtml"><b>Mystery Island</b></a><br>
+
+                          Kick back and relax at the Mystery Island. With cool games, shops, a trading post, a tour, and even a training school, it is a fantastic place for you and your pet to visit. Watch out for the cannibals!
+                 
+</div>
+
+                 
+<div class="lands" style="background-color: #efefef; float: right;"><a href="/shenkuu/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/nsp_shenkuu_bulletin.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/shenkuu/index.phtml"><b><b>Shenkuu</b></b></a><br>
+
+                          Visit this beautiful and exotic empire of flying ships, Lunar Festivals, and mystical wisdom. Marvel at the beauty of Shenkuu's buildings, which are perched on mountaintops among glistening waterfalls.                      
+</div><br><div class="lands" style="background-color: #efefef; float: left;"><a href="/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/clo_carassa_coat.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/winter/index.phtml"><b>Terror Mountain</b></a><br>
+
+                          Three lands in one! Firstly, you can go to Happy Valley, a snowy hamlet at the foot of the mountain, then traverse your way through the Ice Caves, and lastly to the peak of Terror Mountain itself!
+                 
+</div>
+
+                 
+<div class="lands" style="float: right;"><a href="/desert/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/qa_tablet_pyramid.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/desert/index.phtml"><b>The Lost Desert</b></a><br>
+
+                          Brucey B accidentally discovered the Lost Desert when chasing his lucky coin! Find rich and exotic foods and curious Petpets, explore the cities of Sakhmet and Qasala, and play Tug-O-War with the locals!
+</div>
+               
+ 
+<div class="lands" style="float: left;"><a href="/space/index.phtml">
+
+                         
+<img src="http://images.neopets.com/items/toy_roboslothfistpower.gif" style="width: 80; float: right; border: 1px solid black;"></a><a href="/space/index.phtml"><b>Virtupets Space Station</b></a><br>
+
+                          Evil Dr. Sloth has plans to turn all the Neopets in Neopia into his mutant slaves! Go to the Space Station and help thwart his evil plans! There are also games to play, things to buy, and much much more...
+                 
+                 
+</div></div></div>
+
+
+ 
+<div class="anchor"><a name="/faerieland/index.phtml">.</a><h2>Faerieland</h2>
+
+Floating high among the clouds on a colossal mass of rock lies the wondrous, peaceful home of the faeries.
+<br><br><img src="http://i.imgur.com/AepVsZI.png"><div class="castleinthesky" style="margin-top: -310px; margin-left: 233px;"><a href="#/faerieland/palace.phtml"><img src="http://i.imgur.com/AMh2WLi.png" style="width: 80px; height: 50px;"></a></div></div>
+
+
+ 
+
+
+ 
+<div class="anchor"><a name="/faerie/index.phtml">.</a><h2>Faerieland</h2>
+
+Floating high among the clouds on a colossal mass of rock lies the wondrous, peaceful home of the faeries.
+<br><br><img src="http://i.imgur.com/AepVsZI.png"><div class="castleinthesky" style="margin-top: -310px; margin-left: 233px;"><a href="#/faerieland/palace.phtml"><img src="http://i.imgur.com/AMh2WLi.png" style="width: 80px; height: 50px;"></a></div><div class="castleinthesky" style="margin-top: -262px; margin-left: 530px;"><a href="#/faerie/library.phtml"><img src="http://i.imgur.com/AMh2WLi.png" style="width: 80px; height: 50px;"></a></div></div>
+
+
+ 
+<div class="anchor"><a name="/secret.phtml">.</a><br><img src="http://counter2.neomallers.com/gravediggerz.gif?theme=default&amp;visit=transmitter" style="margin-top: 200px;"><br><br>Oh, ho, ho, what is this??? Someone found my super secret page counter??? Someone must be clever...or...someone is lurking my source code. Shame on you! ;)</div></div>
+
+
+ 
+<div class="sidebar" style="position: absolute;"><h3>Goal</h3>
+<a href="/quickref.phtml"><img src="http://i.imgur.com/URjnb2l.png" style="padding: 3px; border: 2px #c9c9c9 solid; background-color: #FFFFFF;"></a><div class="side" style="padding: 3px;"><a href="/customise">» Customise</a></div><div class="side" style="margin-top: -10px;"> 　Name: <b>Lilith</b> 　<br>Species: <b>Draik</b> 　<br>
+
+　　　 Health:
+<b><font color="green">9001</font>  /  <font color="green">9000</font></b> <br>
+
+　  Mood:
+<b>Cheerful</b>
+<br>
+
+　Hunger:
+<b>Full</b> 　　　<br>
+
+　　　　Age:
+<b>1,000 years</b>
+<br>
+
+　Level:
+<b>1,337</b> 　</div>
+<h4>Search Neopets</h4>
+<div class="side"><textarea>Just a text box...</textarea></div>
+<h4>Neofriends 　 <sub><img src="http://images.neopets.com/help/question_mark.png"></sub></h4>
+<div class="side">None of your Neofriends are currently online You must be lonely. </div>
+<h4>Credit</h4>
+<div class="side">I spent a very, <b>VERY</b>
+long time replicating the Neopets site onto this petpage in as much detail as possible. ALL of the coding was done by me,
+and a good portion of the artwork. Please respect the hard work put into this page. Do not use what is not yours. Even if you planned on crediting me, do NOT use this petpage. Yes, it is a cool layout, but it is not for public use.
+<br><br><center>Thank you.</center></div></div>
+
+
+ 
+<div class="footer" style="position: absolute;"><img src="http://images.neopets.com/themes/003_hws_9bde9/footer_bg.png"></div></div>

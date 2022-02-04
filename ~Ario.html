@@ -1,0 +1,917 @@
+
+<style>
+
+
+body {
+
+height: 50px;
+
+font-family: "Georgia";
+
+font-size: 11px;
+
+color: #959699;
+
+text-align: center;
+
+}
+
+a {
+
+text-decoration: none;
+
+letter-spacing: 1px;
+
+text-transform: uppercase;
+
+color: #FFF;
+
+padding-left: 2px;
+
+padding-right: 2px;
+
+font-size: 9px;
+
+}
+
+a:hover {
+
+color: #C0C0C0;
+
+}
+
+.slideshowcontainer {
+
+left: 250px;
+
+top: 150px;
+
+width: 800px;
+
+height: 460px;
+
+overflow: auto;
+
+}
+
+.sstext {
+
+background-color: #1a1415;
+
+color: #adc8c0;
+
+letter-spacing: 1px;
+
+font-style: italic;
+
+text-align: center;
+
+padding: 10px 10px 10px 10px;
+
+z-index: 2;
+
+}
+
+.slidecontainer {
+
+background-color: #211a1b;
+
+top: 0px;
+
+left: 0px;
+
+width: 100%;
+
+height: 1080px;
+
+z-index: -1;
+
+}
+
+.slide {
+
+background-image: url("http://i.imgur.com/8GXTECz.png");
+
+width: 1280px;
+
+height: 445px;
+
+}
+
+.slide2 {
+
+background-image: url("http://i.imgur.com/iZLHWBi.png");
+
+left: 1280px;
+
+width: 1280px;
+
+height: 445px;
+
+}
+
+.slide3 {
+
+background-image: url("http://i.imgur.com/N9BHYVk.png");
+
+left: 2560px;
+
+width: 1280px;
+
+height: 445px;
+
+}
+
+.disclaimertopbar {
+
+background-color: #100d0d;
+
+letter-spacing: 1px;
+
+color: #545f5d;
+
+top: 0px;
+
+left: 0px;
+
+width: 100%;
+
+text-align: center;
+
+padding-top: 5px;
+
+padding-bottom: 5px;
+
+z-index: 1;
+
+}
+
+.sgeventide {
+
+background-image: url("http://i.imgur.com/Gkafqv4.png");
+
+background-repeat: repeat-x;
+
+left: 380px;
+
+top: 1080px;
+
+height: 1100px;
+
+width: 500px;
+
+z-index: -5;
+
+}
+
+.sgstar {
+
+background-image: url("http://i.imgur.com/isq5xmK.png");
+
+background-repeat: repeat-x;
+
+left: 380px;
+
+top: 1080px;
+
+height: 1100px;
+
+width: 400px;
+
+z-index: -5;
+
+}
+
+.sgcontainer {
+
+background-color: #000;
+
+left: 0px;
+
+top: 1080px;
+
+width: 100%;
+
+height: 1100px;
+
+z-index: -6;
+
+}
+
+.sgcborder1 {
+
+background-color: #C0C0C0;
+
+height: 1100px;
+
+width: 500px;
+
+left: 0px;
+
+top: 1080px;
+
+z-index: -5;
+
+}
+
+.sgcborder2 {
+
+background-color: #C0C0C0;
+
+height: 1100px;
+
+width: 430px;
+
+left: 850px;
+
+top: 1080px;
+
+z-index: -5;
+
+}
+
+.sgfront {
+
+background-image: url("http://i.imgur.com/Pt8xl9z.png");
+
+left: 380px;
+
+top: -10px;
+
+height: 727px;
+
+width: 500px;
+
+z-index: -4;
+
+}
+
+.sgfrontblock {
+
+background-color: #211a1b;
+
+left: 380px;
+
+top: -10px;
+
+height: 1080px;
+
+width: 500px;
+
+}
+
+.sgwindowp1 {
+
+background-image: url("http://i.imgur.com/Gkafqv4.png");
+
+background-repeat: repeat-x;
+
+left: 50px;
+
+top: 1130px;
+
+height: 1100px;
+
+width: 300px;
+
+z-index: -5;
+
+}
+
+.sgwindowp2 {
+
+background-color: #000;
+
+left: 50px;
+
+top: 1990px;
+
+height: 250px;
+
+width: 300px;
+
+z-index: -4;
+
+}
+
+.sgwindowp1star {
+
+background-image: url("http://i.imgur.com/isq5xmK.png");
+
+background-repeat: repeat-x;
+
+left: 50px;
+
+top: 1130px;
+
+height: 1000px;
+
+width: 300px;
+
+z-index: -5;
+
+}
+
+.sgwindowbar {
+
+background-color: #000;
+
+top: 1130px;
+
+height: 900px;
+
+width: 20px;
+
+}
+
+.gallerycontainer {
+
+background-color: #17171b;
+
+left: 0px;
+
+top: 2160px;
+
+width: 100%;
+
+height: 3000px;
+
+}
+
+.frames {
+
+top: 250px;
+
+left: 340px;
+
+}
+
+.gtext {
+
+background-color: #000;
+
+color: #959699;
+
+font-family: Georgia;
+
+font-style: italic;
+
+font-size: 12px;
+
+padding: 10px 10px 10px 10px;
+
+z-index: 8;
+
+}
+
+.cavecontainer {
+
+background-image: url("http://i.imgur.com/IElL9Gy.jpg");
+
+left: 0px;
+
+top: 5160px;
+
+width: 100%;
+
+height: 1560px;
+
+}
+
+.dragoncontainer {
+
+background-image: url("http://i.imgur.com/WSTy9fG.png");
+
+background-repeat: no-repeat;
+
+background-color: #040404;
+
+left: 0px;
+
+top: 6720px;
+
+width: 100%;
+
+height: 2500px;
+
+}
+
+p {
+
+background-image: url("http://i.imgur.com/4OqHFzT.png");
+
+line-height: 23px;
+
+padding: 10px 10px 10px 10px;
+
+width: 375px;
+
+z-index: 12;
+
+text-align: left;
+
+overflow: auto;
+
+}
+
+.infobox {
+
+background-color: #000;
+
+border-style: solid;
+
+border-width: 0px;
+
+border-color: #1c2051;
+
+line-height: 23px;
+
+padding: 10px 10px 10px 10px;
+
+width: 250px;
+
+height: 360px;
+
+z-index: 12;
+
+text-align: left;
+
+overflow: auto;
+
+}
+
+strong {
+
+background-color: #1c2051;
+
+padding: 2px 2px 2px 2px;
+
+font-style: italic;
+
+letter-spacing: 1px;
+
+font-size: 10px;
+
+}
+
+.gradientcontainer {
+
+background-image: url("http://i.imgur.com/7vv83Ig.png");
+
+left: 0px;
+
+top: 9220px;
+
+width: 100%;
+
+height: 782px;
+
+z-index: 2;
+
+}
+
+.mecontainer {
+
+background-image: url("http://i.imgur.com/RELfdtW.png");
+
+background-repeat: no-repeat;
+
+background-color: #1b1b1b;
+
+left: 0px;
+
+top: 10001px;
+
+width: 100%;
+
+height: 989px;
+
+}
+
+.meblock {
+
+background-image: url("http://i.imgur.com/4OqHFzT.png");
+
+top: 340px;
+
+left: 900px;
+
+width: 300px;
+
+height: 450px;
+
+line-height: 23px;
+
+padding: 10px 10px 10px 10px;
+
+text-align: left;
+
+overflow: auto;
+
+z-index: 12;
+
+}
+
+table {
+
+display: none;
+
+}
+
+table a img {
+
+display: none;
+
+}
+
+.sf {
+
+display: none;
+
+}
+
+.ugh {
+
+}
+
+center {
+
+font-size: 16px;
+
+text-align: center;
+
+}
+
+</style><div style="background-color: #211a1b; width: 396px; height: 40px; position: absolute; top: 40px; left: 0px;"></div>
+
+<div class="sgfront" style="position: fixed;"></div>
+
+<div class="slidecontainer" style="position: absolute;"></div>
+
+<div class="disclaimertopbar" style="position: absolute;" id="intro">intended to be viewed in <b>1280x800 Chrome Fullscreen</b>
+
+</div>
+
+<div class="sgfrontblock" style="position: absolute;"></div>
+
+<div class="slideshowcontainer" style="position: absolute; border-radius: 500px;">
+
+<div class="slide" style="position: absolute;">
+
+<div class="sstext" style="background-color: #20191a; bottom: 0px; left: 260px; position: absolute; font-style: -blocked-; font-size: 9px; text-transform: uppercase;">place your cursor here and scroll sideways →</div>
+
+<div class="sstext" style="top: 30px; left: 800px; position: absolute;">He is safer when kept slumbering.</div>
+
+</div>
+
+<div class="slide2" style="position: absolute;">
+
+<div class="sstext" style="top: 300px; left: 90px; position: absolute;">Surrounded by jewels and gold and memories.</div>
+
+<div class="sstext" style="top: 90px; left: 810px; position: absolute;">Yes, memories.</div>
+
+<div class="sstext" style="top: 130px; left: 840px; position: absolute;">Especially the memories.</div>
+
+</div>
+
+<div class="slide3" style="position: absolute;">
+
+<div class="sstext" style="top: 320px; left: 0px; position: absolute;">He likes those best.</div>
+
+<div class="sstext" style="top: 345px; left: 125px; position: absolute;">They're far more precious.</div>
+
+<div class="sstext" style="top: 345px; left: 905px; position: absolute;">We are safer when he's kept slumbering.</div>
+
+<div class="sstext" style="background-color: #20191a; bottom: 0px; left: 1067px; position: absolute; font-style: -blocked-; font-size: 9px; text-transform: uppercase;">scroll down</div>
+
+</div>
+
+</div>
+
+<div class="sgcontainer" style="position: absolute;" id="glass"></div>
+
+<div class="sgwindowp1" style="position: absolute; border-radius: 500px;"></div>
+
+<div class="sgwindowp2" style="position: absolute;"></div>
+
+<div class="sgwindowp1star" style="position: absolute;"></div>
+
+<div class="sgwindowp1" style="position: absolute; left: 910px; border-radius: 500px;"></div>
+
+<div class="sgwindowp2" style="position: absolute; left: 910px;"></div>
+
+<div class="sgwindowp1star" style="position: absolute; left: 910px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 70px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 130px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 190px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 250px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 310px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 930px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 990px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 1050px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 1110px;"></div>
+
+<div class="sgwindowbar" style="position: absolute; left: 1170px;"></div>
+
+<div class="sgeventide" style="position: absolute;"></div>
+
+<div class="sgstar" style="position: absolute;"></div>
+
+<div class="gallerycontainer" style="position: absolute;" id="gallery">
+
+<div class="gtext" style="position: absolute; left: 20px; top: 150px;">
+
+Legends tell of a dragon with scales of crystal and horns of gold.
+
+</div>
+
+<div class="gtext" style="position: absolute; left: 670px; top: 850px;">
+
+Others say it is actually the possessed jewels of a powerful enchantress.
+
+</div>
+
+<div class="gtext" style="position: absolute; top: 1250px; left: 270px;">
+
+Others even believe it to be a myth <br>describing a gem-filled volcano
+
+</div>
+
+<div class="gtext" style="position: absolute; top: 1850px; left: 700px;">
+
+on the verge of awaking.
+
+</div>
+
+<div class="gtext" style="position: absolute; top: 2740px; left: 505px;">
+
+But you should never wake a sleeping dragon.</div>
+
+<div class="frames" style="position: absolute;">
+
+<img src="http://i.imgur.com/C4hzKKO.png"><br><br><br><br><br><br><br><br><br><br><img src="http://i.imgur.com/YoxRXau.png"><br><br><br><br><br><br><br><br><br><br><img src="http://i.imgur.com/zEOb1uV.png"></div>
+
+</div>
+
+<div class="cavecontainer" style="position: absolute;" id="cave">
+
+
+
+<div style="left: 720px; top: 1380px; position: absolute;"><img src="http://i.imgur.com/YYdKgcB.png"></div>
+
+<div style="left: 220px; top: 1630px; position: absolute;"><img src="http://i.imgur.com/YYdKgcB.png"></div>
+
+<div style="position: absolute; top: 1235px; left: 450px;">
+
+<p>Parents often tell their children terrifying tales to ensure they stray from trouble. Frightening fables are whispered before goodnights; stories whose true intentions are shrouded in the haze of a sleepy song. Forests seem to set these scenes fairly frequently, giving a home to all sorts of foul, fantastic beasts.
+
+</p>
+
+<p>
+
+In the village of Sonho, local legends tell the tale of a Dragon encompassed by avarice. It is said that he becomes that which he consumes so he devours only what others deem precious. His scales glisten with the remnants of jewels, speckled with gold. Your final vision may take your breath before his bite does, as you stand at what could be mistaken as the entrance to a cave of glowing diamond spires. He is beautiful. You are delicious.
+
+<br></p>
+
+<center>* * *</center>
+
+</div>
+
+</div>
+
+<div class="dragoncontainer" style="position: absolute;">
+
+<div style="left: 200px; top: 660px; position: absolute;"><img src="http://i.imgur.com/7ooXbRw.png"></div>
+
+<div style="left: 420px; top: 1530px; position: absolute;"><img src="http://i.imgur.com/YYdKgcB.png"></div>
+
+<div style="left: 350px; top: 1880px; position: absolute;"><img src="http://i.imgur.com/7ooXbRw.png"></div>
+
+
+
+<div style="position: absolute; top: 0px; left: 450px;">
+
+<p>
+
+Rather than a menace, the villagers cast him as a god. He is their protector, albeit unintentionally. Tales of the Dragon have stretched to the farthest of lands. They hear stories of a ferocious monster who feeds on gold and diamonds. They learn it resides within a castle carved within a mountain, rooms bursting with treasure. They discover those who inhabit the land closest to the creature are unarmed. Gleaming with greed and bloodlust, invaders arrive by the thousands. Though perhaps too hastily.</p>
+
+<p>Armies clad in armour drenched in multiple victories! Swords decked in intricate metalwork! Hilts fashioned with gemstones dripping with magic! Weaponry warm with sentiment and denoted with the pride of ancient families! Charms from beloveds tucked close to the hearts of starcrossed soldiers! How can the Dragon ignore such temptation when dangled so closely? Every new battalion serves only to strengthen him.
+
+</p>
+
+<p>
+
+Though…the villagers know something the outsiders do not. How else would they have survived this long? Yes, the Dragon feeds on the precious. But treasure is not the only thing he considers to be valuable. Foremost, he is fond of memories. Stories sooth and sedate him, even causing slumber on rare occasions.
+
+</p>
+
+<p>
+
+Within the village a group was created for this purpose, titling themselves "Soothsayers". They train from childhood collecting memories, weaving fictional worlds, and embarking on quests. From this, each Soothsayer is granted a 'class' or 'classification'. <i>Historian. Architect. Voyager.</i> Each path holds importance.
+
+<br></p>
+
+<center>* * *</center>
+
+<p>Historians are tasked with memorizing the stories of the village. Its history, its evolution, its people, its traditions. With the passing of each year, this path becomes more difficult for the newly-inducted. Compared to the other Soothsayer classes, Historians interact most infrequently with the Dragon. However, as they grow to become living archives of Sonho, they are treated with great respect.
+
+<br><br>
+
+Architects are creators. They focus strictly upon the fictional and the imagined. Architects read and write voraciously to help with the invention of new stories. During the early mornings they go from home to home as the villagers dictate their dreams. Usually these are noted down for inspiration but some are read verbatim. Though the Architects have found that the Dragon reacts more favourably when the actual dreamer is recounting the tale. There has been debate within the Soothsayers as to whether another classification should be created. But dreams cannot often be controlled. And wouldn't lucid dreaming be synonymous with the creation of stories, therefore the job of the Architects?
+
+<br><br>
+
+Voyagers are travellers. Leaving the village and scouring the lands, they return with tales filled with the unknown. Aside from collecting tales from the people they come across, they undergo their own adventures and quests. Voyagers that return are admired by the villagers due to the excitement and intrigue of the outside world. However far too often a Voyager disappears. Whether they perished or have found a new life will forever remain a mystery. During invasions, idle Voyagers aid in the protection of the villagers.
+
+<br></p>
+
+<center>* * *</center>
+
+<p>
+
+Unless devoid of treasure or facing threats the Dragon is not often destructive. A few villagers, normal and Soothsayer alike, have even befriended him and sneak away to share their own dreams and memories to appease him. However, the Soothsayers keep close to the castle just in case, ears pricked for the slightest sign of danger.
+
+</p>
+
+<p>
+
+When in flight, the Dragon ripples like liquid and shines like streams of sunlight trapped within water. Appropriately, he is also known to the villagers as <i>Ario</i>, which means "The River". Villagers have even found that his scales dim to a calm blue when fed stories, gleaming with specks of silver and crystal. Out of respect and partial fear, Ario is referred to as <i>the Dragon</i>.
+
+</p>
+
+</div>
+
+<div style="position: absolute; top: 1700px; left: 450px;" id="ref"><img src="http://i.imgur.com/0cO0vjL.gif"></div>
+
+
+
+<div style="position: absolute; top: 2090px; width: 475px; left: 415px; font-size: 13px; font-style: italic; text-align: center;">Throughout the years, Historians have kept documentation of the Dragon and his displayed appearances, abilities, and miscellaneous aspects for reference.
+
+</div>
+
+<div class="infobox" style="position: absolute; top: 2250px; left: 170px;">
+
+<strong>NAME</strong> Ario, The Dragon
+
+<br><strong>SPECIES</strong> Dragon
+
+<br><strong>AGE</strong> Unknown. Earliest Sonhonian record is from the thirteenth year (Y13). It is presently Y521.
+
+<br><strong>HEIGHT</strong> 33m, approx. from snout to tail.
+
+<br><strong>WEIGHT</strong> untested. estimated at 250kg.
+
+<br><strong>WING SPAN</strong> 35m, approx.
+
+<br><strong>DIET</strong> minerals, crystals, gems, geodes, memories, stories, flesh. <i>Hates</i> Cubic Zirconia, coloured stones, synthetic gems, etc. He is able to tell the difference. <i>Loves</i> Tourmaline, Dioptase, hopeful dreams, and the good luck charms of devoured enemies.
+
+<br><strong>HABITAT</strong> Castle caverns. Seems most content in the dark surrounded by treasures with dim lighting. Prefers light naturally emanating from minerals.
+
+<br><strong>ABILITIES</strong> Body is composed of consumed substances. Able to change colour and appearance due to this, depending on diet. See: <b>Forms</b>. Flight. Can send spouts of boiling gold/silver at enemies. It is unknown if he is able to do this with other materials.
+
+</div>
+
+<div class="infobox" style="position: absolute; top: 2250px; left: 520px;">
+
+<strong>FORMS</strong>
+
+As Ario is able to adapt his body to that which he eats, his appearance has undergone many changes. Listed below are the most notable changes witnessed by Historians.
+
+<li>
+
+<strong>Gold, Gems</strong> A common appearance. As the majority of the castle is filled with gold coins and treasures, it is the most readily available substance to Ario. His golden scales are flecked with the colours of gemstones.</li>
+
+<li>
+
+<strong>Dioptase</strong> Seen once, after intruders attempted to invade. Many treasures were detailed with dioptase. While consuming their remaining inventory, Ario seemed delighted. Left for several weeks and returned, his body made up of clusters of white rock. Prisms erupted from between them made of dioptase. Sand spilled from his mouth when he roared.
+
+</li>
+
+<li>
+
+<strong>Crystal?</strong> Seen once. Ario may have left and returned without notice. When a Soothsayer came to pay tribute, his body—including his internal organs and muscles—were made of a sharp, translucent, rock. He refracted light and cast rainbows around the village when he left the next afternoon. The Soothsayer noted that the crystals within the castle caverns were smashed when she first saw him.
+
+</li>
+
+<li>
+
+<strong>Oak, Mahogany, Leaves</strong> One of the first sightings recorded. Possibly the first.
+
+</li>
+
+<li>
+
+<strong>Ivory, Iron</strong> Normally seen after an invasion. Ario's body is made up of ivory, cracked and scratched. Shards of iron are also present. The membrane of his wings are a deep red.
+
+</li>
+
+<li>
+
+<strong>???</strong> After being told stories and sleeping for a number of nights, Ario's body may become a deep blue. He glows, the colour dimming as he exhales. There are reports that his scales depict different silhouettes of scenes from the stories he has 'consumed'. During this form, his presence seems almost nonexistent.
+
+</li>
+
+</div>
+
+<div class="infobox" style="position: absolute; top: 2250px; left: 870px;">
+
+<strong>BEHAVIOUR</strong> Ario is a very proud creature. Prior to engaging with him, a bow with unbroken eye contact is required. In turn he will nod his head. This is likely to denote respect. Throughout the years he has normally been tolerant of those who enter the cavern in which he resides. As humans are either in the castle to pay tribute or steal, he will hesitate long enough to discover their intentions. So long as one is careful not to take his treasures and immediately bows, Ario will prolong execution.
+
+<br>When being told stories Ario will walk around the human (flying or walking) until they have finished. Otherwise he will encircle them with his body, keeping constant eye contact with the human. A third, very rare, behaviour occurs when he has placed trust in the speaker. After encircling the human Ario will fall asleep. Soothsayers or villagers who experience this are highly respected.
+
+<br><strong>FLIGHT PATTERN</strong> Reasons for Ario's departures are unknown. He leaves at all times of the day, never sticking to one particular time period. His return times are more stable. As the Soothsayers normally finish their studies in the evening and pay tribute at night, his returns occur most frequently at dusk.
+
+</div>
+
+</div>
+
+<div class="gradientcontainer" style="position: absolute;">
+
+<img src="http://i.imgur.com/7ooXbRw.png"><div class="gtext" style="position: absolute; top: 500px; left: 500px;">Hidden away in a remote part of the forest<br>is the Soothsayer who has created this compendium...
+
+</div>
+
+</div>
+
+<div class="mecontainer" style="position: absolute;">
+
+<div class="gtext" style="position: absolute; top: 40px; left: 800px;">...and her name is</div>
+
+<div class="gtext" style="position: absolute; top: 300px; left: 900px;">
+
+<i>KRISTINE</i>.</div>
+
+<div class="meblock" style="position: absolute;">
+
+<div id="tiptop"></div>Hello there, garfield_chubz! I hope you enjoyed reading about Ario. I wanted to make reading this page an experience, thus the lack of navigation throughout.
+
+<br><br>
+
+I hope you were able to become immersed into the world of Ario and the village of Sonho. If you've got any questions or just want to chat, send me a <a href="http://www.neopets.com/neomessages.phtml?type=send&amp;recipient=garfield_chubz">neomail</a>!
+
+<br><br><center><img src="http://i.imgur.com/QFLTy7n.gif"></center>
+
+<div style="text-align: center;">
+
+<br><textarea style="background-color: #000; color: #1c79c8;"><a href="http://neopets.com/~Ario"><img src="http://i.imgur.com/QFLTy7n.gif"></a></textarea><br><br><a href="#intro">INTRO</a> || <a href="#glass">GLASS</a> || <a href="#gallery">GALLERY</a> || <a href="#cave">CAVE</a> || <a href="#ref">ARIO REF</a>
+
+<br><br>
+
+THANK YOU SO MUCH to <a href="http://www.neopets.com/userlookup.phtml?user=shyruto">SHY</a> for allowing me to adopt such a lovely neopet!
+
+<br><br><a href="http://www.neopets.com/petlookup.phtml?pet=O07"><img src="http://i82.photobucket.com/albums/j279/qazfan/ribbon.png"></a>
+
+
+
+<br><br><div class="gtext" style="text-align: center;" id="app">About This Petpage</div>
+
+<br>
+
+Just some aspects of this page I'd like to share!
+
+<li>  The stained glass image of Ario and a Soothsayer changes colour as you scroll up and down the page.</li>
+
+<li>  The first gallery image is a scan from my sketchbook. They are the first drafts I have of Ario's character.</li>
+
+<li>  <i>But you should never wake a sleeping dragon</i> is a variation of the Hogwarts motto, "Draco dormiens nunquam titillandus" which warns that one should <i>Never tickle a sleeping dragon.</i>
+
+</li>
+
+<li>  "Sonho" and "Rio" are portuguese for "Dream" and "River". Another name I considered was Quento (phonetic tagalog, meaning 'to recount/retell'). I chose Sonho due to "Rio" being a part of the portuguese vocabulary.</li>
+
+<li>  Inspiration for Ario's ability came from an artist named Francesca Wellborn.</li>
+
+<li>  Although "Soothsayer" holds another definition, I used it literally in my story. The words they 'say' are able to 'sooth' Ario, hence they are Soothsayers.</li>
+
+<li>  Requiring a bow and eye contact are traditions I borrowed from J.K. Rowling's hippogriffs.</li>
+
+<li>  The aesthetic for the text in this petpage is inspired by narration in manga panels.</li>
+
+<br><br><div class="gtext" style="text-align: center;" id="credit">Credits</div>
+
+<br>All content on this page unless otherwise stated is newly created and © <a href="http://www.neopets.com/userlookup.phtml?user=garfield_chubz">KB</a> 2013.
+
+<br><br>NEOPETS, characters, logos, names and all related indicia<br>
+
+are trademarks of <a href="/aboutus.phtml">Neopets, Inc.,</a> © 1999-2013.<br>® denotes Reg. US Pat. &amp; TM Office.
+
+All rights reserved.<br><a href="/privacy.phtml">PRIVACY POLICY</a> || <a href="/safetytips.phtml" class="sf">Safety Tips</a><a href="/contact.phtml">Contact</a> || <a href="/aboutus.phtml">About</a> || <a href="/presskit_form.phtml">Press Kit</a>
+
+</div>
+
+</div>
+
+<div style="position: absolute; left: 898px; top: 815px; width: 305px;">
+
+<br><a href="#tiptop">WELCOME</a> || <a href="#app">PAGE INFO</a> || <a href="#credit">credits</a>
+
+</div>

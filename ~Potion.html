@@ -1,0 +1,2212 @@
+
+<style>
+
+
+a {
+
+color: #2367B5;
+
+text-decoration: none;
+
+}
+
+a:hover {
+
+color: #FFB300;
+
+}
+
+a img {
+
+border-width: 0;
+
+}
+
+.sf, table {
+
+display: none;
+
+}
+
+p {
+
+text-align: left;
+
+margin: 8px 5px;
+
+}
+
+body {
+
+text-align: center;
+
+background: #cfcfcf;
+
+}
+
+#container {
+
+margin: 0px auto -70px auto;
+
+border: 2px #747474 solid;
+
+border-width: 0px 2px;
+
+width: 1000px;
+
+background: #fff;
+
+font: 9pt Verdana;
+
+line-height: 18px;
+
+overflow: hidden;
+
+}
+
+#footer {
+
+height: 160px;
+
+background: url("http://images.neopets.com/themes/000_def_f65b1/footer_bg.png");
+
+clear: both;
+
+}
+
+#header {
+
+height: 77px;
+
+background: url("http://images.neopets.com/themes/000_def_f65b1/header_bg.png");
+
+margin-bottom: 5px;
+
+}
+
+.h_link {
+
+float: left;
+
+}
+
+.trans_space {
+
+width: 150px;
+
+margin-left: 5px;
+
+height: 60px;
+
+border: 0px red solid;
+
+}
+
+#template_nav img {
+
+float: left;
+
+height: 38px;
+
+}
+
+#template_nav li.nav_image, #nst {
+
+display: inline;
+
+float: left;
+
+}
+
+#template_nav li.nav_image:hover ul.dropdown {
+
+display: block;
+
+}
+
+#template_nav li ul li {
+
+margin: 0px;
+
+padding: 0px;
+
+}
+
+ul.dropdown {
+
+border: 1px #FAA819 solid;
+
+z-index: 2;
+
+top: 30px;
+
+display: none;
+
+clear: left;
+
+background: #FFF7C4;
+
+padding: 5px;
+
+list-style: none;
+
+margin: 0px 0px 0px 10px;
+
+text-align: left;
+
+}
+
+ul.dropdown li {
+
+margin: 0px;
+
+padding: 0px;
+
+}
+
+ul.dropdown a {
+
+font: bold 8pt Verdana;
+
+line-height: 14px;
+
+display: block;
+
+text-decoration: none;
+
+color: #000;
+
+}
+
+ul.dropdown a:hover {
+
+color: #FAA819;
+
+}
+
+#time {
+
+float: right;
+
+clear: right;
+
+margin: 22px 18px 0px 0px;
+
+font: bold 7.5pt Verdana;
+
+}
+
+.trans_space, .h_link img {
+
+width: 150px;
+
+margin-left: 5px;
+
+height: 60px;
+
+}
+
+.h_link {
+
+top: 8px;
+
+left: 0px;
+
+}
+
+#nst {
+
+font: bold 7.5pt Verdana;
+
+padding: 13px 0px;
+
+width: 114px;
+
+}
+
+.user {
+
+margin: 12px 8px 0px 0px;
+
+float: right;
+
+font: 8pt Verdana;
+
+display: inline;
+
+}
+
+.user a:hover {
+
+color: #2367B5;
+
+}
+
+#sidebar {
+
+width: 17.5%;
+
+float: left;
+
+font: 7.5pt Verdana;
+
+line-height: 14px;
+
+}
+
+#sidebar div.module {
+
+border: 2px #C9C9C9 solid;
+
+margin: 7px;
+
+}
+
+#sidebar div.module h1 {
+
+background: #FFD026;
+
+font: bold 8pt Verdana;
+
+padding: 4px;
+
+border-bottom: 2px #c9c9c9 solid;
+
+margin: 0px 0px 3px 0px;
+
+text-align: left;
+
+}
+
+#sidebar div.pet_stat, #sidebar div.pet_stat_bold {
+
+font: 7pt Verdana;
+
+float: left;
+
+width: 46.5%;
+
+line-height: 14px;
+
+}
+
+.pet_stat {
+
+text-align: right;
+
+padding-right: 3px;
+
+}
+
+.pet_stat_bold {
+
+text-align: left;
+
+font-weight: bold !important;
+
+}
+
+#pet {
+
+height: 295px;
+
+}
+
+#pet a {
+
+display: block;
+
+margin: 3px 0px;
+
+padding: 3px 0px;
+
+font: bold 7.5pt Verdana;
+
+border: 2px #c9c9c9 solid;
+
+border-width: 2px 0px;
+
+}
+
+#nf a {
+
+display: block;
+
+font-weight: normal;
+
+text-align: left;
+
+}
+
+#nf img {
+
+float: left;
+
+clear: left;
+
+margin: 2px 4px;
+
+}
+
+#nf a b {
+
+display: block;
+
+}
+
+#bookmarks a {
+
+display: block;
+
+font: bold 8pt Verdana;
+
+}
+
+#bookmarks p {
+
+margin: 8px 3px 3px 3px;
+
+}
+
+#tkm {
+
+padding: 3px;
+
+color: #666;
+
+text-align: left;
+
+}
+
+#content {
+
+width: 82.5%;
+
+float: left;
+
+}
+
+.module {
+
+border: 2px #c9c9c9 solid;
+
+margin: 5px 10px 5px 3px;
+
+}
+
+.column {
+
+float: left;
+
+width: 48.2%;
+
+border: 2px #c9c9c9 solid;
+
+margin: 5px 7px 5px 3px;
+
+height: 300px;
+
+}
+
+#content h1 {
+
+font: bold 9pt Verdana;
+
+color: #fff;
+
+background: #2367B5;
+
+padding: 4px 5px;
+
+border-bottom: 2px #c9c9c9 solid;
+
+margin: 0px 0px 3px 0px;
+
+text-align: left;
+
+}
+
+#black {
+
+font: bold 9pt Verdana;
+
+color: #fff !important;
+
+background: #000 !important;
+
+padding: 4px 5px;
+
+margin: 0px 0px 5px 0px;
+
+text-align: left;
+
+}
+
+#dailies a {
+
+float: left;
+
+display: block;
+
+font: 8pt Verdana;
+
+text-align: left;
+
+text-indent: 5px;
+
+width: 33%;
+
+padding: 5px 0px;
+
+}
+
+#dailies a img {
+
+display: block;
+
+margin: 3px auto;
+
+}
+
+#avatars a {
+
+float: left;
+
+}
+
+#avatars a img {
+
+margin: 7px;
+
+width: 50px;
+
+height: 50px;
+
+}
+
+#games a {
+
+float: left;
+
+text-decoration: none;
+
+width: 25%;
+
+margin: 10px 0px;
+
+font: 8pt Verdana;
+
+}
+
+#games a img {
+
+display: block;
+
+margin: 0px auto -28px auto;
+
+}
+
+#wishlist {
+
+margin-right: 7px;
+
+}
+
+#wishlist ul {
+
+padding: 0;
+
+margin: 0;
+
+list-style: none;
+
+}
+
+#wishlist li {
+
+list-style: none;
+
+width: 24.5%;
+
+float: left;
+
+text-align: left;
+
+margin: 4px 0px 8px 0px;
+
+font: 8pt Verdana;
+
+line-height: 16px;
+
+color: #666;
+
+}
+
+#wishlist li img {
+
+float: left;
+
+margin: 0px 8px;
+
+}
+
+#wishlist li b {
+
+display: block;
+
+color: #000;
+
+}
+
+#legal_jargon {
+
+margin: 0px 0px 0px 10px;
+
+width: 78%;
+
+float: left;
+
+text-align: left;
+
+font: 7.5pt Verdana;
+
+}
+
+#legal_jargon a, #legal_jargon a:hover {
+
+color: #000;
+
+}
+
+#legal_jargon a img {
+
+margin: 0px 5px;
+
+}
+
+#footer_img {
+
+float: right;
+
+margin-top: -10px;
+
+border: 0px red solid;
+
+}
+
+#template_nav {
+
+height: 35px;
+
+padding: 0px;
+
+list-style: none;
+
+width: 900px;
+
+margin: -3px 0px 0px 157px !important;
+
+float: left;
+
+}
+
+hr {
+
+clear: both;
+
+border: 3px #ccc dashed;
+
+border-width: 0px 0px 2px 0px;
+
+padding-top: 10px;
+
+margin: 5px 5px 10px 5px;
+
+}
+
+#offer {
+
+width: 80%;
+
+}
+
+.sf, .smallfont {
+
+font-size: 7.5pt;
+
+}
+
+.eventIcon {
+
+height: 36px;
+
+text-align: left;
+
+vertical-align: middle;
+
+width: 420px;
+
+float: left;
+
+font-size: 7.5pt;
+
+margin-left: 156px;
+
+padding-top: 3px;
+
+}
+
+.eventIcon img {
+
+vertical-align: middle;
+
+}
+
+.eventMessage {
+
+display: inline-block;
+
+vertical-align: middle;
+
+line-height: 14px;
+
+}
+
+.eventMessage a:hover {
+
+color: #2367B5;
+
+}
+
+.button-link-online {
+
+padding: 3px 10px;
+
+background: #4479BA;
+
+color: #FFF !important;
+
+border: solid 1px #20538D;
+
+}
+
+.neofriendUsername_online {
+
+display: inline-block;
+
+margin-left: -30px;
+
+}
+
+#nf p {
+
+font-size: 7pt;
+
+text-align: center;
+
+margin: 0 0 10px 0;
+
+}
+
+.active-table .pet {
+
+width: 70px;
+
+height: 60px;
+
+margin: 0;
+
+padding: 10px 5px 0px 5px;
+
+border: 1px solid silver;
+
+display: inline-block;
+
+}
+
+.pet_menu_show {
+
+display: none;
+
+z-index: 6;
+
+}
+
+.pet_menu_show {
+
+left: auto;
+
+margin: 50px 0 0 0;
+
+padding: 4px 7px 4px 4px;
+
+list-style: none;
+
+overflow: hidden;
+
+border: 1px solid gray;
+
+background-color: #EEE;
+
+width: 120px;
+
+font-size: 8pt;
+
+font-weight: bold;
+
+color: #2E72C0;
+
+text-align: left;
+
+}
+
+.pet_menu_launcher {
+
+display: block;
+
+float: left;
+
+width: 15px;
+
+height: 50px;
+
+margin-right: 5px;
+
+padding: 0;
+
+text-align: center;
+
+background-color: gray;
+
+background-repeat: no-repeat;
+
+background-position: 50% 50%;
+
+background-image: url("http://images.neopets.com/arrow_down.gif");
+
+}
+
+.pet_menu_launcher:hover {
+
+background-image: url("http://images.neopets.com/arrow_up.gif") !important;
+
+}
+
+.pet_menu_launcher:hover + .pet_menu_show, .pet_menu_show:hover {
+
+display: block;
+
+}
+
+.pet-container h1 a, .pet-container h1 a:hover {
+
+color: #C5C5C5;
+
+}
+
+.pet_info {
+
+display: inline-block;
+
+width: 242px;
+
+font-size: 7.5pt;
+
+line-height: 15px;
+
+}
+
+.active-pet div {
+
+vertical-align: top;
+
+}
+
+.pet_stat, .pet_stat_bold {
+
+display: inline-block;
+
+}
+
+div.pet_image {
+
+display: inline-block;
+
+width: 300px;
+
+height: 300px;
+
+margin: 0;
+
+padding: 0;
+
+font-size: 0;
+
+line-height: 0;
+
+border: 1px solid black;
+
+}
+
+.pet_image img {
+
+width: 100%;
+
+height: 100%;
+
+}
+
+.pet_more {
+
+display: inline-block;
+
+width: 242px;
+
+margin: 0;
+
+padding: 0;
+
+border: 1px solid silver;
+
+height: 300px;
+
+}
+
+.female {
+
+color: #FDA6FF;
+
+}
+
+.active-pet #pet_health {
+
+color: green;
+
+}
+
+.pet_notices_header {
+
+height: 20px;
+
+margin: 0;
+
+padding: 0;
+
+font-size: 13px;
+
+font-weight: bold;
+
+text-align: center;
+
+color: white;
+
+line-height: 20px;
+
+background-color: silver;
+
+}
+
+.pet_notices {
+
+overflow: auto;
+
+}
+
+.pet_notices hr {
+
+width: 100%;
+
+border-bottom: 1px solid silver;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+.more-img {
+
+height: 88px;
+
+overflow: auto;
+
+margin: 0;
+
+padding: 3px 0 0 82px;
+
+font-size: 7.5pt;
+
+text-align: left;
+
+line-height: 15px;
+
+}
+
+.active-pet {
+
+border: 2px solid #C9C9C9;
+
+padding-bottom: 4px;
+
+margin-bottom: 50px;
+
+}
+
+.pet-container {
+
+margin-top: -360px;
+
+overflow: hidden;
+
+height: 720px;
+
+width: 815px;
+
+border-top: none;
+
+}
+
+.active-anchor {
+
+padding-bottom: 370px;
+
+display: block;
+
+z-index: -1;
+
+}
+
+.active-border {
+
+border: 2px solid #E4E4E4;
+
+height: 338px;
+
+}
+
+.trans {
+
+left: 0;
+
+}
+
+.thumb:hover + .trans, .trans:hover, .pet_menu_launcher:hover + ul + a .trans, .pet_menu_show:hover + a .trans {
+
+display: none;
+
+}
+
+</style><div id="container">
+
+<div id="header" style="position: relative;">
+
+<a href="/" class="h_link" style="position: absolute;"><img src="http://images.neopets.com/transparent_spacer.gif"></a>
+
+<div class="eventIcon"><a href="http://www.neopets.com/neomessages.phtml?type=send&amp;recipient=lynneai" style="color: default;"><img src="http://images.neopets.com/themes/000_def_f65b1/events/neomail.png" width="25" height="25" border="0" alt="Neomail Message from: lynneai" title="Neomail Message from: lynneai" style="padding-right: 5px;"></a>
+
+
+
+<div class="eventMessage"><b>Neomail</b> Message from: lynneai
+<a href="/allevents.phtml"><b>» See all events «</b></a> </div></div>
+
+
+
+<div class="user">
+
+<strong>Welcome, <a href="/userlookup.phtml?user=lynneai">lynneai</a></strong> | <strong>NP: <a href="/objects.phtml?type=inventory">1337</a></strong> | <strong><a href="/">Logout</a></strong>
+
+
+
+</div>
+
+
+
+<ul id="template_nav" style="position: relative;"><li class="nav_image">
+
+<a href="/myaccount.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/myaccount.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/myaccount.phtml">» Control Panel</a></li>
+
+<li><a href="/preferences.phtml">» Preferences</a></li>
+
+<li><a href="/userinfo.phtml">» Edit Profile</a></li>
+
+<li><a href="/neomessages.phtml">» Neomail</a></li>
+
+<li><a href="/neofriends.phtml">» Neofriends</a></li>
+
+<li><a href="/addpet.phtml">» Create a Neopet</a></li>
+
+<li><a href="/space/warehouse/prizecodes.phtml">» Redeem Code</a></li>
+
+</ul></li>
+
+<li class="nav_image">
+
+<a href="/customise/"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/customise.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/customise/">» Customise Neopet</a></li>
+
+<li><a href="/objects.phtml?type=inventory">» Inventory</a></li>
+
+<li><a href="/closet.phtml">» Closet</a></li>
+
+<li><a href="/neohome/"> » Neohomes</a></li>
+
+<li><a href="/addpet.phtml">» Create a Neopet</a></li>
+
+<li><a href="/pound/">» Pound</a></li>
+
+</ul></li>
+
+
+
+<li class="nav_image">
+
+<a href="/games/"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/games.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/games/">» Games Room</a></li>
+
+<li><a href="/games/category.phtml?sortby=pop">» Popular</a></li>
+
+<li><a href="/games/hiscores.phtml">» High Scores</a></li>
+
+<li><a href="/games/favourites.phtml">» Favourites</a></li>
+
+<li><a href="/keyquest/">» Key Quest</a></li>
+
+<li><a href="/habitarium/">» Habitarium</a></li>
+
+</ul></li>
+
+
+
+<li class="nav_image">
+
+<a href="/explore.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/explore.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/explore.phtml">» Map of Neopia</a></li>
+
+<li><a href="/help/tutorial/index.phtml">» Tutorial</a></li>
+
+<li><a href="/neopedia.phtml">» Neopedia</a></li>
+
+<li><a href="/petcentral.phtml">» Pet Central</a></li>
+
+<li><a href="/calendar.phtml">» Calendar</a></li>
+
+</ul></li>
+
+
+
+<li class="nav_image">
+
+<a href="/nf.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/news.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/nf.phtml">» New Features</a></li>
+
+<li><a href="/comingsoon.phtml">» Coming Soon</a></li>
+
+<li><a href="/ntimes/index.phtml">» Neopian Times</a></li>
+
+<li><a href="/stuff.phtml">» Merch News</a></li> </ul></li>
+
+
+
+
+
+<li class="nav_image">
+
+<a href="/community/index.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/community.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/community/index.phtml">» Hub</a></li>
+
+<li><a href="/neoboards/index.phtml">» Neoboards</a></li>
+
+<li><a href="/contests.phtml">» Spotlights</a></li>
+
+<li><a href="/guilds/index.phtml">» Guilds</a></li>
+
+</ul></li>
+
+
+
+<li class="nav_image">
+
+<a href="/objects.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/shops.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/objects.phtml">» Neopia Central</a></li>
+
+<li><a href="/market.phtml?type=wizard">» Shop Wizard</a></li>
+
+<li><a href="/market.phtml?type=your">» Your Shop</a></li>
+
+<li><a href="/auctions.phtml">» Auctions</a></li>
+
+<li><a href="/island/tradingpost.phtml">» Trading Post</a></li>
+
+<li><a href="/bank.phtml">» Bank</a></li>
+
+<li><a href="/shopping/index.phtml">» Merchandise</a></li>
+
+</ul></li>
+
+
+
+<li class="nav_image">
+
+<a href="/mall/index.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/ncmall.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="/mall/index.phtml">» Shop</a></li>
+
+<li><a href="http://nc.neopets.com/get-nickcash">» Get NC</a></li>
+
+<li><a href="http://nc.neopets.com/nickcash-cards">» Find Nick Game Cards</a></li>
+
+<li><a href="http://nc.neopets.com/redeemnc">» Redeem Nick Game Cards</a></li>
+
+<li><a href="http://nc.neopets.com/transactionlog/">» Transaction Log</a></li>
+
+</ul></li>
+
+
+
+<li class="nav_image">
+
+<a href="http://nc.neopets.com/membership/"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/premium.png"></a>
+
+<ul class="dropdown" style="position: absolute;"><li><a href="http://nc.neopets.com/membership/">» Become a Member</a></li>
+
+</ul></li>
+
+
+
+<li id="nst">
+
+1:28:52 pm NST
+
+</li>
+
+
+
+</ul></div>
+
+
+
+<div id="sidebar">
+
+<div class="module" id="pet">
+
+
+
+<h1>Potion</h1>
+
+<img style="width: 150px; height: 150px;" src="http://pets.neopets.com/cp/bwlhbq64/1/4.png"><a href="/customise">» Customise</a>
+
+<div class="pet_stat">
+
+Species:
+
+
+Health:
+
+
+Mood:
+
+
+Hunger:
+
+
+Age:
+
+
+Level:
+
+</div>
+
+<div class="pet_stat_bold">
+
+Aisha
+
+
+<span id="pet_health">45 / 30</span>
+
+
+
+
+delighted!
+
+
+bloated
+
+
+1,870 days
+
+
+5
+
+</div>
+
+</div>
+
+
+
+<div class="module" id="nf">
+
+<h1>Neofriends</h1>
+
+<p>These Neofriends are currently on line! </p>
+
+<a href="/userlookup.phtml?user=lynneai"><img src="http://images.neopets.com/neoboards/avatars/valiant.gif"><div class="neofriendUsername_online">
+
+<a href="/userlookup.phtml?user=lyneai" style="font-weight: normal;">lynneai</a>
+
+
+<a href="/neomessages.phtml?type=send&amp;recipient=lynneai" style="font-weight: normal; border-radius: 4px;" class="button-link-online">Neomail</a>
+</div>
+
+
+
+</a></div>
+
+<div class="module" id="bookmarks">
+
+<h1>Bookmarks</h1>
+
+
+
+<p><a href="/~Brave">» NC Trades</a>
+
+Lynn's NC up for trade!</p>
+
+
+
+<p><a href="/~Rei">» H.A.C.K</a>
+
+A must-read on account safety!</p>
+
+
+
+<p><a href="/~agiftforlife">» A Gift For Life</a>
+
+Tons of untaken petnames and usernames.</p>
+
+
+
+<p><a href="/~Svid">» Loyal User Perks</a>Info about benefits of an aged account.</p>
+
+
+
+<p><a href="/~Akaunts">» Account Guide</a>
+
+What is and isn't allowed on side accounts.</p>
+
+
+
+<p><a href="/~Grattin">» UC Trading Guide</a> Reference for trading pets.</p>
+
+</div>
+
+
+
+<div class="module" id="tkm">
+
+Layout design © Neopets. Adapted for petpages by <a href="/~thatk1llsme">That K1lls Me.</a>
+
+
+
+</div>
+
+</div>
+
+
+
+<div id="content">
+
+<div class="module">
+
+<h1 id="black">Pets UFT</h1>
+
+<p><strong>Welcome to my UFT page!</strong> Don't be alarmed, you're on a petpage! The active neopet to your left is a preview of what it would be like to own this featured pet. Click the neomail message event above if you'd like to reach out and make an offer!</p>
+
+<p>
+
+
+
+</p>
+
+<p></p>
+
+<center>
+
+<h4>Need to type up your offers as you see them?</h4>
+
+<textarea id="offer"></textarea><p>
+
+</p>
+
+</center></div>
+
+
+
+<div id="ucs">
+
+<div style="text-align: left; font-weight: bold;"><p>Quick reference</p></div>
+
+<p>This is the place to see all of Lynn's neopets UFT! Click on each neopet to see what it would be like to own them. The Neopet at the top of the list with the green background is your active Neopet. Your inactive Neopets are displayed below your active Neopet once you click on their greyed out images. To make one of these Neopets active, click on the arrow next to its picture and select Make Active.
+
+</p>
+
+
+
+<div class="active-table">
+
+
+
+
+
+<div class="pet">
+
+<a class="pet_menu_launcher"></a><ul style="position: absolute;" class="pet_menu_show"><li class="medText"><span class="pointer">»</span>
+
+<a href="#charisma"> Make Active</a></li>
+
+</ul><a href="#charisma" style="position: relative;"><img class="thumb" id="charismatically_thumb" src="http://pets.neopets.com/cp/7vg98kkv/1/6.png" style="width: 50px; height: 50px;" title="charismatically" alt="charismatically"><img class="trans" src="http://images.neopets.com/semi-trans.png" border="0" height="50" width="50" style="position: absolute;"></a>
+
+</div>
+
+
+
+<div class="pet">
+
+<a class="pet_menu_launcher"></a><ul style="position: absolute;" class="pet_menu_show"><li class="medText"><span class="pointer">
+
+»</span><a href="#faun"> Make Active</a></li>
+
+</ul><a href="#faun" style="position: relative;">
+
+<img class="thumb" id="Faun_thumb" src="http://pets.neopets.com/cp/so84lr86/1/6.png" title="Faun" alt="Faun" style="width: 50px; height: 50px;"><img class="trans" src="http://images.neopets.com/semi-trans.png" border="0" height="50" width="50" style="position: absolute;"></a>
+
+</div>
+
+
+
+<div class="pet">
+
+<a class="pet_menu_launcher"></a><ul style="position: absolute;" class="pet_menu_show"><li class="medText"><span class="pointer">»</span>
+
+<a href="#fri"> Make Active</a></li>
+
+</ul><a href="#fri" style="position: relative;"><img id="Frixxiey_thumb" class="thumb" src="http://pets.neopets.com/cp/v4b824lh/1/6.png" style="width: 50px; height: 50px;"><img class="trans" src="http://images.neopets.com/semi-trans.png" border="0" height="50" width="50" style="position: absolute;"></a></div>
+
+
+
+<div class="pet">
+
+<a class="pet_menu_launcher"></a><ul style="position: absolute;" class="pet_menu_show"><li class="medText"><span class="pointer">»</span>
+
+<a href="#Potion"> Make Active</a></li>
+
+</ul><a href="#potion" style="position: relative;"><img class="thumb" id="Potion_thumb" style="width: 50px; height: 50px;" src="http://pets.neopets.com/cp/bwlhbq64/1/6.png"><img class="trans" src="http://images.neopets.com/semi-trans.png" border="0" height="50" width="50" style="position: absolute;"></a></div>
+
+
+
+
+
+<div class="pet">
+
+<a class="pet_menu_launcher"></a><ul style="position: absolute;" class="pet_menu_show"><li class="medText"><span class="pointer">»</span>
+
+<a href="#shannon"> Make Active</a></li>
+
+</ul><a href="#shannon" style="position: relative;"><img id="Shannon_thumb" class="thumb" src="http://pets.neopets.com/cp/k628qm6q/1/6.png" style="width: 50px; height: 50px;"><img class="trans" src="http://images.neopets.com/semi-trans.png" border="0" height="50" width="50" style="position: absolute;"></a></div>
+
+
+
+
+
+<div class="pet">
+
+<a class="pet_menu_launcher"></a><ul style="position: absolute;" class="pet_menu_show"><li class="medText"><span class="pointer">»</span>
+
+<a href="#leet"> Make Active</a></li>
+
+</ul><a href="#leet" style="position: relative;"><img id="Shannon_thumb" class="thumb" src="http://pets.neopets.com/cpn/x_l33t_r35t0ck3r_x/1/6.png" style="width: 50px; height: 50px;"><img class="trans" src="http://images.neopets.com/semi-trans.png" border="0" height="50" width="50" style="position: absolute;"></a></div>
+
+
+
+
+
+<div class="pet-container">
+
+
+
+<a name="Potion" class="active-anchor"></a>
+
+<div class="active-border">
+
+<div class="active-pet">
+
+<h1 id="black" class="contentModuleHeader"><a href="/petlookup.phtml?pet=Potion">Potion</a> the Wraith Aisha</h1>
+
+<div class="pet_info">
+
+<div class="pet_stat">
+
+Species:
+
+
+Colour:
+
+
+Gender:
+
+
+Age:
+
+
+Level:
+
+
+Health:
+
+
+Mood:
+
+
+Hunger:
+
+
+Strength:
+
+
+Defence:
+
+
+Move:
+
+
+Intelligence:
+
+</div>
+
+<div class="pet_stat_bold">
+
+Wraith
+
+
+Aisha
+
+
+<span class="female">Female</span>
+
+
+1,930 days
+
+
+1
+
+
+<span id="pet_health"> 15 / 8</span>
+
+
+content
+
+
+bloated
+
+
+strong
+
+
+tough
+
+
+mach 2
+
+
+average
+
+</div>
+
+</div>
+
+<div class="pet_image">
+
+<img src="http://pets.neopets.com/cp/bwlhbq64/1/7.png"></div>
+
+<div class="pet_more">
+
+<h3 class="pet_notices_header">Notices</h3>
+
+
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/images/onholiday.gif') no-repeat;">Potion checks out of the Neolodge in 24 days, 12 hours and 38 minutes.
+<a href="/remove_neolodge.phtml?pet_name=Potion"><b>Check out early?</b></a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<a name="faun" class="active-anchor"></a>
+
+<div class="active-border">
+
+<div class="active-pet">
+
+<h1 id="black" class="contentModuleHeader"><a href="/petlookup.phtml?pet=Faun">Faun</a> the Mutant Ixi</h1>
+
+<div class="pet_info">
+
+<div class="pet_stat">
+
+Species:
+
+
+Colour:
+
+
+Gender:
+
+
+Age:
+
+
+Level:
+
+
+Health:
+
+
+Mood:
+
+
+Hunger:
+
+
+Strength:
+
+
+Defence:
+
+
+Move:
+
+
+Intelligence:
+
+</div>
+
+<div class="pet_stat_bold">
+
+Ixi
+
+
+Mutant
+
+
+<span>Male</span>
+
+
+1,854 days
+
+
+3
+
+
+<span id="pet_health"> 10 / 10</span>
+
+
+content
+
+
+bloated
+
+
+average
+
+
+tough
+
+
+lightning
+
+
+average
+
+</div>
+
+</div>
+
+<div class="pet_image">
+
+<img src="http://pets.neopets.com/cp/so84lr86/1/7.png"></div>
+
+<div class="pet_more">
+
+<h3 class="pet_notices_header">Notices</h3>
+
+
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/images/onholiday.gif') no-repeat;">Faun checks out of the Neolodge in 23 days, 12 hours and 57 minutes.
+<a href="/remove_neolodge.phtml?pet_name=Faun"><b>Check out early?</b></a>
+
+</div>
+
+
+
+</div></div>
+
+</div>
+
+</div>
+
+
+
+<a name="charisma" class="active-anchor"></a>
+
+<div class="active-border">
+
+<div class="active-pet">
+
+<h1 id="black" class="contentModuleHeader"><a href="/petlookup.phtml?pet=Charismatically">charismatically</a> the Grey Uni</h1>
+
+<div class="pet_info">
+
+<div class="pet_stat">
+
+Species:
+
+
+Colour:
+
+
+Gender:
+
+
+Age:
+
+
+Level:
+
+
+Health:
+
+
+Mood:
+
+
+Hunger:
+
+
+Strength:
+
+
+Defence:
+
+
+Move:
+
+
+Intelligence:
+
+</div>
+
+<div class="pet_stat_bold">
+
+Uni
+
+
+Grey
+
+
+<span class="female">Female</span>
+
+
+3,933 days
+
+
+7
+
+
+<span id="pet_health"> 15 / 12</span>
+
+
+delighted!
+
+
+bloated
+
+
+strong
+
+
+average
+
+
+super fast
+
+
+very clever
+
+</div>
+
+</div>
+
+<div class="pet_image">
+
+<img src="http://pets.neopets.com/cp/7vg98kkv/1/7.png"></div>
+
+<div class="pet_more">
+
+<h3 class="pet_notices_header">Notices</h3>
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/images/onholiday.gif') no-repeat;">charismatically checks out of the Neolodge in 24 days, 12 hours and 38 minutes.
+<a href="/remove_neolodge.phtml?pet_name=Naive"><b>Check out early?</b></a>
+
+</div>
+
+
+
+<hr></div>
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/pets/80by80/uni_grey_sad.gif') no-repeat 0 2px;">
+
+charismatically must be converted in order to be fully customisable.
+<a href="/convert_pet.phtml?pet_name=charismatically"><b>Click here to learn more.</b></a></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<a name="fri" class="active-anchor"></a>
+
+<div class="active-border">
+
+<div class="active-pet">
+
+<h1 id="black" class="contentModuleHeader"><a href="/petlookup.phtml?pet=Frixxiey">Frixxiey</a> the Faerie Ixi</h1>
+
+<div class="pet_info">
+
+<div class="pet_stat">
+
+Species:
+
+
+Colour:
+
+
+Gender:
+
+
+Age:
+
+
+Level:
+
+
+Health:
+
+
+Mood:
+
+
+Hunger:
+
+
+Strength:
+
+
+Defence:
+
+
+Move:
+
+
+Intelligence:
+
+</div>
+
+<div class="pet_stat_bold">
+
+Ixi
+
+
+Faerie
+
+
+<span class="female">Female</span>
+
+
+5,735 days
+
+
+1
+
+
+<span> 8 / 15</span>
+
+
+content
+
+
+bloated
+
+
+average
+
+
+heavy
+
+
+mach 2
+
+
+average
+
+</div>
+
+</div>
+
+<div class="pet_image">
+
+<img src="http://pets.neopets.com/cp/v4b824lh/1/7.png"></div>
+
+<div class="pet_more">
+
+<h3 class="pet_notices_header">Notices</h3>
+
+
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/images/onholiday.gif') no-repeat;">Frixxiey checks out of the Neolodge in 17 days, 4 hours and 40 minutes.
+<a href="/remove_neolodge.phtml?pet_name=Naive"><b>Check out early?</b></a>
+
+</div>
+
+<hr></div>
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/pets/80by80/ixi_faerie_sad.gif') no-repeat 0 2px;">
+
+Frixxiey must be converted in order to be fully customisable.
+<a href="/convert_pet.phtml?pet_name=Frixxiey"><b>Click here to learn more.</b></a></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<a name="shannon" class="active-anchor"></a>
+
+
+
+<div class="active-border">
+
+<div class="active-pet">
+
+<h1 id="black" class="contentModuleHeader"><a href="/petlookup.phtml?pet=Shannnontales">Shannnontales</a> the Faerie Wocky</h1>
+
+<div class="pet_info">
+
+<div class="pet_stat">
+
+Species:
+
+
+Colour:
+
+
+Gender:
+
+
+Age:
+
+
+Level:
+
+
+Health:
+
+
+Mood:
+
+
+Hunger:
+
+
+Strength:
+
+
+Defence:
+
+
+Move:
+
+
+Intelligence:
+
+</div>
+
+<div class="pet_stat_bold">
+
+Wocky
+
+
+Faerie
+
+
+<span class="female">Female</span>
+
+
+5,429
+
+
+1
+
+
+<span id="pet_health"> 210 / 210</span>
+
+
+delighted!
+
+
+bloated
+
+
+AWESOME (68)
+
+
+beyond godly
+
+
+GREAT (33)
+
+
+average
+
+</div>
+
+</div>
+
+<div class="pet_image">
+
+<img src="http://pets.neopets.com/cp/k628qm6q/1/7.png"></div>
+
+<div class="pet_more">
+
+<h3 class="pet_notices_header">Notices</h3>
+
+
+
+<div class="pet_notices"><div class="more-img" style="background: white url('http://images.neopets.com/images/onholiday.gif') no-repeat;">Shannnontales checks out of the Neolodge in 24 days, 12 hours and 38 minutes.
+<a href="/remove_neolodge.phtml?pet_name=Shannnontales"><b>Check out early?</b></a></div>
+
+<hr></div>
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/pets/80by80/wocky_faerie_sad.gif') no-repeat 0 2px;">
+
+Shannnontales must be converted in order to be fully customisable.
+<a href="/convert_pet.phtml?pet_name=Shannnontales"><b>Click here to learn more.</b></a></div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<a name="leet" class="active-anchor"></a>
+
+
+
+<div class="active-border">
+
+<div class="active-pet">
+
+<h1 id="black" class="contentModuleHeader"><a href="/petlookup.phtml?pet=x_l33t_r35t0ck3r_x">x_l33t_r35t0ck3r_x</a> the Plushie Grundo</h1>
+
+<div class="pet_info">
+
+<div class="pet_stat">
+
+Species:
+
+
+Colour:
+
+
+Gender:
+
+
+Age:
+
+
+Level:
+
+
+Health:
+
+
+Mood:
+
+
+Hunger:
+
+
+Strength:
+
+
+Defence:
+
+
+Move:
+
+
+Intelligence:
+
+</div>
+
+<div class="pet_stat_bold">
+
+Grundo
+
+
+Plushie
+
+
+<span class="female">Male</span>
+
+
+4,297
+
+
+2
+
+
+<span id="pet_health"> 21 / 7</span>
+
+
+delighted!
+
+
+bloated
+
+
+strong
+
+
+armoured
+
+
+average
+
+
+dim witted
+
+</div>
+
+</div>
+
+<div class="pet_image">
+
+<img src="http://pets.neopets.com/cpn/x_l33t_r35t0ck3r_x/1/7.png"></div>
+
+<div class="pet_more">
+
+<h3 class="pet_notices_header">Notices</h3>
+
+
+
+<div class="pet_notices"><div class="more-img" style="background: white url('http://images.neopets.com/images/onholiday.gif') no-repeat;">x_l33t_r35t0ck3r_x checks out of the Neolodge in 24 days, 12 hours and 38 minutes.
+<a href="/remove_neolodge.phtml?pet_name=x_l33t_r35t0ck3r_x"><b>Check out early?</b></a></div>
+
+<hr></div>
+
+<div class="pet_notices">
+
+<div class="more-img" style="background: white url('http://images.neopets.com/pets/80by80/grundo_plushie_sad.gif') no-repeat 0 2px;">
+
+x_l33t_r35t0ck3r_x must be converted in order to be fully customisable.
+<a href="/convert_pet.phtml?pet_name=x_l33t_r35t0ck3r_x"><b>Click here to learn more.</b></a></div>
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="module">
+
+<h1>Seeking:</h1>
+
+<p>
+
+WN UCs and common RW/RN for all pets
+
+</p></div>
+
+</div></div>
+
+</div>
+
+<div id="footer">
+
+<a href="/" class="h_link"><img src="http://images.neopets.com/transparent_spacer.gif" class="trans_space"></a>
+
+<img src="http://images.neopets.com/themes/000_def_f65b1/rotations/7.png" id="footer_img"><div id="legal_jargon">
+
+<a href="/privacy.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/privacypolicy.png"></a><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/divider.png"><a href="/safetytips.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/safetytips.png"></a><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/divider.png"><a href="/contact.phml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/contactus.png"></a><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/divider.png"><a href="/aboutus.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/aboutus.png"></a><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/divider.png"><a href="/refer/index.phtml"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/referral.png"></a><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/divider.png"><a href="/help.html"><img src="http://images.neopets.com/themes/000_def_f65b1/navigation/help.png"></a>
+
+
+
+NEOPETS and all related indicia are trademarks of <strong>Neopets, Inc.</strong>, © 1999-2011. ®
+
+denotes Reg. USPTO. All rights reserved. Use of this site signifies your acceptance of the <a href="/terms.phtml">Terms of Use</a>.
+
+</div>
+
+
